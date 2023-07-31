@@ -11,6 +11,38 @@
 <body>
     <h1>We are inside first app.</h1>
     <h3>Author Name : {{author}}</h3>
+    {% if age|default:0 >= 18 %}
+    <p>You are able for driving licence</p>
+    {% else %}
+    <p>You are not available for this licence.</p>
+    {% endif %}
+    <!-- marks -->
+
+    {% if marks|default:0 >= 80 %}
+    <p>Your grade: A+</p>
+    {% elif marks|default:0 >= 70 and marks|default:0 < 80 %} <p>Your grade: A</p>
+        {% else %}
+        <p>You are just pass</p>
+        {% endif %}
+        <div>
+            <table border="1" width=500>
+                <tr>
+                    <th>Id</th>
+                    <th>Course</th>
+                    <th>Teacher</th>
+                </tr>
+
+                {% for course in courses %}
+                <tr>
+                    <td>{{course.id}}</td>
+                    <td>{{course.course}}</td>
+                    <td>{{course.teacher}}</td>
+                    {% endfor %}
+                </tr>
+
+            </table>
+        </div>
+
 </body>
 
 </html>
