@@ -42,7 +42,20 @@
 
             </table>
         </div>
+        <div>
+            <h1>Marks: {{marks | add:"2"}}</h1>
+            <h3>Marks divisible by 2: {{marks | divisibleby:"2"}}</h3>
+            <h3>Length: {{name | length}}</h3>
+            <h3>Word: {{name | wordcount}}</h3>
+            <!-- Truncate word -->
+            <h4>Truncate words: {{blog | truncatewords:8}}</h4>
+            <h4>Truncate Char: {{blog | truncatechars:18}}</h4>
+            <h3>List: {{name | make_list}}</h3>
+            <h3>UpperCase: {{name | upper}}</h3>
+            <h3>LowerCase: {{name | lower}}</h3>
+            <h3>Join: {{lst | join:","}}</h3>
 
+        </div>
 </body>
 
 </html>

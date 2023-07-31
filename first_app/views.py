@@ -20,4 +20,4 @@ def contact(request):
             'course': 'Database',
             'teacher': 'Iftekhar'
         },
-    ]})
+    ], 'name': 'Tanver', 'lst': [1, 2, 4, 7], 'blog': 'I am Tanver Rana Sobur. I am the student of Bangladesh University department of CSE. THis is our blog website.'})
